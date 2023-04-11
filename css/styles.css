@@ -1,0 +1,911 @@
+/* --------RESETEO CSS-------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto condensed", sans-serif;
+    
+}
+ul{
+    list-style-type: none;
+}
+
+/* --------HEADER-------- */
+
+.header{
+    background-color: #d90429;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    min-height: 100px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #edf2f4;
+    
+}
+
+.header-title{
+    text-align: center;
+    font-family: 'Climate Crisis', cursive;
+    }
+.nav{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 15;
+}
+.nav-list{
+    display: flex;
+    gap: 0;
+}
+.nav-list-item{
+    border: 1px solid black;
+    width: 20%;
+    text-align: center;
+    background-color: #2b2d42;
+}
+.nav-list-item a{
+    text-decoration: none;
+    color: #edf2f4;
+    font-size: 0.8rem;
+    display: block;
+}
+.nav-list-item:hover{
+    background-color: #8d99ae;
+    border-color: #edf2f4;
+    color: #2b2d42;
+}
+
+/* --------ACERCA DE/SEPARADOR-------- */
+
+.about{
+    height: 80px;
+    margin-top: 150px;
+    
+}
+
+.about-form{
+    height: 125px;
+    margin-top: 150px;
+}
+
+.about-form h2, .about-form p{
+    text-align: center;
+}
+
+.about h2, .about p{
+    text-align: center;
+}
+
+.separador{
+    position: relative;
+    width: 50%;
+    left: 25%;
+    border-bottom: 2px solid #d90429;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* --------INDEX/NOTICIAS-------- */
+
+.noticias-contenedor h2{
+    text-align: center;
+}
+.noticias{
+    display: flex;
+    flex-direction: column;
+}
+
+.article-box-outer{
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #d90429;
+    border-top: 2px solid #ef233c;
+}
+
+.article-box-outer a{
+    text-decoration: none;
+    color: #2b2d42;
+}
+
+.article-box-outer a h3{
+    padding: 0.8em 0;
+}
+
+.article-image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 80% 10%;
+    
+}
+
+.article-box-inner{
+    position: relative;
+}
+
+.copyright{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #000000;
+    color: #edf2f4;
+    padding: 0 0.2em;
+}
+
+/* --------FOOTER-------- */
+
+.footer{
+    background-color: #2b2d42;
+    border-top: 2px solid #ef233c;
+    min-height: 100px;
+    width: 100vw;
+}
+
+.footer-section-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.footer-content{
+    padding: 0.8em;
+}
+
+/* LOGO */
+
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-ball{
+    width: 50px;
+    text-align: center;
+  
+}
+.logo-name{
+    color: #edf2f4;
+    font-family: 'Climate Crisis', cursive;
+}
+
+/* NEWSLETTER */
+
+.email-label{
+    color: #edf2f4;
+    text-align: center;
+}
+.newsletter{
+   display: flex;
+   flex-direction: column;
+   padding: 0 10%;
+   justify-content: center;
+   align-items: center;
+}
+.newsletter input{
+    width: 50%;
+}
+
+/* REDES */
+
+.social-icon{
+    width: 36px;
+}
+.social-list{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+/* ---------TABLETS-------- */
+
+@media (min-width: 600px) and (max-width: 1200px)  {
+
+.footer-section-list{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-list li{
+    padding: 0.8em;
+} 
+
+.noticias{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.newsletter input{
+    width: 100%;
+}
+}
+
+/* --------DESKTOP-------- */
+
+@media (min-width: 1201px){
+    .noticias{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-section-list{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footer-section-list li{
+        width: 1fr;
+    } 
+    .social-list li{
+        padding: 0.8em;
+    }
+    .newsletter input{
+        width: 100%;
+    } 
+   
+}
+
+/* --------PAGINA EQUIPOS-------- */
+
+/* HISTORIA */
+
+.historia-liga{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+}
+
+.historia-liga h3{
+    align-self: center;
+}
+
+.historia-liga p{
+    padding: 1em 0;
+}
+
+.historia-liga figure{
+    position: relative;
+}
+
+.historia-liga img{
+    width: 100%;
+}
+
+.historia-liga figcaption{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #000000;
+    color: #edf2f4;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 1201px){
+   
+    .historia-liga figure{
+        width: 30%;
+    }    
+    
+}
+
+/* --------CONFERENCIAS-------- */
+
+.equipos-title{
+    text-align: center;
+}
+
+.team-logo{
+    width: 100px;
+    text-align: center;
+}
+
+.east ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 2em 0;
+    row-gap: 1em;
+    margin-bottom: 3em;
+}
+.east ul li{
+    position: relative;
+}
+.heat{
+    width: 200px;
+}
+
+.east h3{
+    text-align: center;
+    padding: 1em 0;
+}
+
+.west h3{
+    text-align: center;
+    padding: 1em 0;
+}
+
+.west ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 2em 0;
+    row-gap: 1em;
+    margin-bottom: 3em;
+}
+
+.west ul li{
+    position: relative;
+}
+
+/* INFO EQUIPOS ESTE */
+
+.info-hawks{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 120px;
+    left: -20px;
+    display: none;
+}
+
+.info-hawks h4{
+    text-align: center;
+}
+
+.hawks:hover + .info-hawks{
+        display: block;
+}
+
+.info-celtics{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 120px;
+    left: -20px;
+    display: none;
+}
+
+.info-celtics h4{
+    text-align: center;
+}
+
+.celtics:hover + .info-celtics{
+        display: block;
+}
+
+.info-bulls{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 120px;
+    left: -20px;
+    display: none;
+}
+
+.info-bulls h4{
+    text-align: center;
+}
+
+.bulls:hover + .info-bulls{
+        display: block;
+}
+
+.info-cavs{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: -20px;
+    display: none;
+}
+
+.info-cavs h4{
+    text-align: center;
+}
+
+.cavs:hover + .info-cavs{
+        display: block;
+}
+
+.info-pistons{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: -20px;
+    display: none;
+}
+
+.info-pistons h4{
+    text-align: center;
+}
+
+.pistons:hover + .info-pistons{
+        display: block;
+}
+
+.info-pacers{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: -20px;
+    display: none;
+}
+
+.info-pacers h4{
+    text-align: center;
+}
+
+.pacers:hover + .info-pacers{
+        display: block;
+}
+
+.info-heat{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 130px;
+    left: 30px;
+    display: none;
+}
+
+.info-heat h4{
+    text-align: center;
+}
+
+.heat:hover + .info-heat{
+        display: block;
+}
+
+.info-bucks{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 130px;
+    left: -20px;
+    display: none;
+}
+
+.info-bucks h4{
+    text-align: center;
+}
+
+.bucks:hover + .info-bucks{
+        display: block;
+}
+
+.info-hornets{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: -20px;
+    display: none;
+}
+
+.info-hornets h4{
+    text-align: center;
+}
+
+.hornets:hover + .info-hornets{
+        display: block;
+}
+
+.info-knicks{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: -20px;
+    display: none;
+}
+
+.info-knicks h4{
+    text-align: center;
+}
+
+.knicks:hover + .info-knicks{
+        display: block;
+}
+
+.info-nets{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: -20px;
+    display: none;
+}
+
+.info-nets h4{
+    text-align: center;
+}
+
+.nets:hover + .info-nets{
+        display: block;
+}
+
+.info-raptors{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: -20px;
+    display: none;
+}
+
+.info-raptors h4{
+    text-align: center;
+}
+
+.raptors:hover + .info-raptors{
+        display: block;
+}
+
+.info-sixers{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: -20px;
+    display: none;
+}
+
+.info-sixers h4{
+    text-align: center;
+}
+
+.sixers:hover + .info-sixers{
+        display: block;
+}
+
+.info-wizards{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: -20px;
+    display: none;
+}
+
+.info-wizards h4{
+    text-align: center;
+}
+
+.wizards:hover + .info-wizards{
+        display: block;
+}
+
+.info-magic{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    left: -20px;
+    display: none;
+}
+
+.info-magic h4{
+    text-align: center;
+}
+
+.magic:hover + .info-magic{
+        display: block;
+}
+
+/* INFO EQUIPOS OESTE */
+
+.team__info{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 130px;
+    left: -20px;
+    display: none;
+}
+.team h4{
+    text-align: center;
+}
+
+.team:hover + div{
+    display: block;
+}
+
+
+@media (max-width:599px){
+    .info-blazers, .info-bulls, .info-bucks, .info-cavs, .info-celtics, .info-clippers, .info-grizzlies, .info-hawks, .info-heat, .info-hornets, .info-jazz, .info-kings, .info-knicks, .info-lakers, .info-magic, .info-mavs, .info-nets, .info-nuggets, .info-pacers, .info-pelicans, .info-pistons, .info-raptors, .info-rockets, .info-sixers, .info-spurs, .info-suns, .info-thunder, .info-warriors, .info-wizards, .info-wolves{
+        display: block;
+        position: static;
+        width: 125px;
+        
+    }
+
+    .east ul li figure, .west ul li figure{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .east ul, .west ul{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (min-width: 1201px){
+    .east ul,.west ul{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+/* --------PAGINA TOPTEN-------- */
+
+.estrellas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.estrellas article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+}
+
+.estrellas article h3{
+    padding: 0.5em;
+}
+
+.estrellas article iframe{
+    width: 100%;
+    height: 250px;
+}
+
+.estrellas article p{
+    padding: 0.5em;
+}
+
+@media (min-width:600px) and (max-width:1200px) {
+    .estrellas article iframe{
+        height: 400px;
+    }
+}
+
+@media (min-width: 1201px){
+    .estrellas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .estrellas article{
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
+/* --------PAGINA POSICIONES-------- */
+
+.cuadro-titulo h2, .contenedor-playoff{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 1em;
+}
+
+.cuadro{
+    width: 100%;
+}
+
+.tabla-posiciones{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 75px;
+    padding:  1em;
+}
+.tabla-posiciones article{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+.tabla-posiciones thead{
+    background-color: #8d99ae;
+}
+.tabla-posiciones th{
+    background-color: #d90429;
+    border: 2px solid #2b2d42;
+    color: #edf2f4;
+}
+.tabla-posiciones tr{
+    background-color: #2b2d42;
+    color: #edf2f4;
+}
+
+.tabla-posiciones tr:nth-child(even){
+    background-color: #edf2f4;
+    color: #2b2d42;
+}
+
+
+@media (min-width: 1201px) {
+
+
+    .tabla-posiciones{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em;
+    }
+}
+
+/* --------PAGINA CONTACTO-------- */
+
+.about-form{
+    margin-bottom: 8em;
+}
+
+.about-form p{
+    padding: 0.5em 1em;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.formulario form fieldset{
+    width: 100%;
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.formulario input{
+    width: 200px;
+    text-align: right;
+    
+}
+.submit input{
+    width: 100%;
+    text-align: center;
+    background-color: #2b2d42;
+    color: #edf2f4;
+    border: 1px solid #d90429;
+    
+}
+.submit input:hover{
+    background-color: #3f415a;
+}
+.text-area textarea{
+    width: 100%;
+    resize: none;
+}
+.asunto select{
+    width: 200px;
+    text-align: right;
+}
+
+@media (min-width: 600px) and (max-width: 1200px){
+    .formulario form fieldset{
+        width: 55%;
+    }
+}
+
+@media (min-width: 1201px){
+    .formulario form fieldset{
+        width: 30%;
+    }
+}
+
+/* --------PAGINA INDIVIDUAL DE NOTICIAS-------- */
+
+.main__noticia{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.main__noticia article{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__noticia article img{
+    width: 100%;
+}
+
+.main__noticia article figure{
+    position: relative;
+}
+
+.main__noticia article p:not(.copyright){
+    padding: 1.5em 0;
+}
+
+.main__noticia article h3{
+    padding: 1em 0;
+}

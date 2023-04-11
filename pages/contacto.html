@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>BASQUETBOLERO</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Basquetbolero</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="../index.html">NOTICIAS</a></li>
+                <li class="nav-list-item"><a href="./equipos.html">EQUIPOS</a></li>
+                <li class="nav-list-item"><a href="./topten.html">TOP</a></li>
+                <li class="nav-list-item"><a href="./posiciones.html">POSICIONES</a></li>
+                <li class="nav-list-item"><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="about-form">
+            <h2>Basquetbolero</h2>
+            <p>¿Querés pedirnos clips de tu jugador favorito?</p>
+            <p>¿Querés dejarnos un saludo?</p>
+            <p>¿Querés que hagamos un análisis de algun tema en especifico?</p>
+            <p>Llená el siguiente formulario y contactate con nosotros.</p>
+        </section>
+        <div class="separador"></div>
+
+        <section class="formulario">
+            <form action="">
+                <fieldset>
+                    <label for="name">Tu nombre: </label>
+                    <input type="text" id="name" name="name">
+                </fieldset>
+                <fieldset>
+                    <label for="edad">Tu edad: </label>
+                    <input type="number" name="edad" id="edad">
+                </fieldset>
+                <fieldset class="asunto">
+                    <label for="asunto">Asunto: </label>
+                <select name="asunto" id="asunto">
+                    <option value="0">Saludo</option>
+                    <option value="1">Pedido</option>
+                    <option value="2">Otros</option>
+                </select>
+                </fieldset>
+                <fieldset class="text-area">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje aquí..."></textarea>
+                </fieldset>
+                <fieldset class="submit">
+                    <input type="submit" value="ENVIAR">
+                </fieldset>
+            </form>
+        </section>
+        
+    </main>
+        
+    <footer class="footer">
+        <ul class="footer-section-list">
+            <li class="footer-content">
+                <figure class="logo-container">
+                    <img class="logo-ball" src=".././img/pelota.png" alt="Logo">
+                    <span class="logo-name">Basquetbolero</span>
+                </figure>    
+            </li>
+            <li class="footer-content">
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.youtube.com/">
+                            <img class="social-icon" src=".././img/icon-yt.svg" alt="Youtube">
+               </a>         
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/?lang=es">
+                            <img class="social-icon" src=".././img/ico-twitter.svg" alt="Twitter">
+               </a>         
+                    </li>
+                    <li>
+                        <a href="https://es-la.facebook.com/">
+                            <img class="social-icon" src=".././img/ico-fb.svg" alt="Facebook">
+               </a>         
+                    </li>
+                </ul>
+            </li>
+            <li class="footer-content">
+                <form class="newsletter" action="">
+                    <label class="email-label" for="email">Suscribite a nuestro newsletter</label>
+                    <input type="email" id="email" placeholder="xxxxxx@xxxxx.xxx" name="email">
+                    <input type="submit" value="ENVIAR">
+                </form>
+            </li>
+        </ul>
+        
+    </footer>
+</body>
+</html>
