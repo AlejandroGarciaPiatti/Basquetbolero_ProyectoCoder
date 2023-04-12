@@ -142,7 +142,7 @@ ul{
     background-color: #2b2d42;
     border-top: 2px solid #ef233c;
     min-height: 100px;
-    width: 100vw;
+    width: 100%;
 }
 
 .footer-section-list{
