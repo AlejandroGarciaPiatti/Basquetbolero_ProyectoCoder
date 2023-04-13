@@ -9,5 +9,5 @@ menuBurger.addEventListener("click", ()=>{
 
 menuCierre.addEventListener("click", ()=>{
     menu.style.opacity = 0;
-    menu.style.zIndex = 0;
+    menu.style.zIndex = -5;
 })

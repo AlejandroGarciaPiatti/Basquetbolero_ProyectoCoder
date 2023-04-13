@@ -79,7 +79,7 @@ a{
     left: 0;
     top: 0;
     background-color: #8d99ae;
-    z-index: 0;
+    z-index: -5;
     border: 2px solid #edf2f4;
     opacity: 0;
     transition: opacity 1s;
