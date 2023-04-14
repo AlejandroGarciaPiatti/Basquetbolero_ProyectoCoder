@@ -464,11 +464,11 @@ a{
 
 .contenedor-info-inner{
     position: absolute;
-    height: 80%;
-    width: 80%;
+    height: 60%;
+    width: 60%;
     background-color: #d90429;
-    left: 10%;
-    top: 10%;
+    left: 20%;
+    top: 20%;
     border: 2px solid #edf2f4;
     display: flex;
     justify-content: center;
@@ -487,16 +487,24 @@ a{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    /* background-image: url("../img/hawks.png");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center; */
+    
 }
 
-.contenedor-info-estilo .info-hawks{
+.contenedor-info-estilo .info-hawks, .contenedor-info-estilo .info-celtics, .contenedor-info-estilo .info-bulls, .contenedor-info-estilo .info-cavs, .contenedor-info-estilo .info-pistons, .contenedor-info-estilo .info-pacers, .contenedor-info-estilo .info-heat, .contenedor-info-estilo .info-bucks, .contenedor-info-estilo .info-hornets, .contenedor-info-estilo .info-knicks, .contenedor-info-estilo .info-nets, .contenedor-info-estilo .info-raptors, .contenedor-info-estilo .info-sixers, .contenedor-info-estilo .info-wizards, .contenedor-info-estilo .info-magic {
     width: 100%;
     padding: 20px;
     display: block;
     position: relative;
     top: 0;
     left: 0;
+
 }
+
+
 
 /* INFO EQUIPOS ESTE */
 
