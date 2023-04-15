@@ -54,6 +54,15 @@ const logoNets = document.querySelector(".nets");
 const infoRaps = document.querySelector(".equipos-raps");
 const logoRaps = document.querySelector(".raptors");
 
+const infoSixers = document.querySelector(".equipos-sixers");
+const logoSixers = document.querySelector(".sixers");
+
+const infoWizards = document.querySelector(".equipos-wizards");
+const logoWizards = document.querySelector(".wizards");
+
+const infoMagic = document.querySelector(".equipos-magic");
+const logoMagic = document.querySelector(".magic");
+
 
 
 
@@ -235,6 +244,51 @@ logoRaps.addEventListener("click", (evt)=>{
     desplegableInner.style.backgroundRepeat = "no-repeat";
     desplegableInner.style.backgroundPosition = "center";
     desplegableInner.style.backgroundPositionY = "50px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoSixers.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoSixersCopy = infoSixers.cloneNode(true);
+    infoSixersCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoSixersCopy);
+    desplegableInner.style.backgroundColor = "#000";
+    desplegableInner.style.backgroundImage = "url('../img/sixers.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "-150px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoWizards.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoWizardsCopy = infoWizards.cloneNode(true);
+    infoWizardsCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoWizardsCopy);
+    desplegableInner.style.backgroundColor = "#000";
+    desplegableInner.style.backgroundImage = "url('../img/wizards.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "-150px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoMagic.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoMagicCopy = infoMagic.cloneNode(true);
+    infoMagicCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoMagicCopy);
+    desplegableInner.style.backgroundColor = "#fff";
+    desplegableInner.style.backgroundImage = "url('../img/magic.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "90px";
     desplegable.style.opacity = 100;
     desplegable.style.zIndex = 20;
 })  
