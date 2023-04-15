@@ -66,7 +66,7 @@ const logoMagic = document.querySelector(".magic");
 
 
 
-
+// Desplegables Este
 
 logoHawks.addEventListener("click", (evt)=>{
     evt.preventDefault();
@@ -253,7 +253,7 @@ logoSixers.addEventListener("click", (evt)=>{
     const infoSixersCopy = infoSixers.cloneNode(true);
     infoSixersCopy.classList.toggle("contenedor-info-estilo") 
     desplegableInner.appendChild(infoSixersCopy);
-    desplegableInner.style.backgroundColor = "#000";
+    desplegableInner.style.backgroundColor = "#fff";
     desplegableInner.style.backgroundImage = "url('../img/sixers.png')";
     desplegableInner.style.backgroundSize = "1000px";
     desplegableInner.style.backgroundRepeat = "no-repeat";
@@ -268,7 +268,7 @@ logoWizards.addEventListener("click", (evt)=>{
     const infoWizardsCopy = infoWizards.cloneNode(true);
     infoWizardsCopy.classList.toggle("contenedor-info-estilo") 
     desplegableInner.appendChild(infoWizardsCopy);
-    desplegableInner.style.backgroundColor = "#000";
+    desplegableInner.style.backgroundColor = "#003";
     desplegableInner.style.backgroundImage = "url('../img/wizards.png')";
     desplegableInner.style.backgroundSize = "1000px";
     desplegableInner.style.backgroundRepeat = "no-repeat";
@@ -293,6 +293,284 @@ logoMagic.addEventListener("click", (evt)=>{
     desplegable.style.zIndex = 20;
 })  
 
+
+
+// Desplegables Oeste
+
+const infoBlazers = document.querySelector(".equipos-blazers");
+const logoBlazers = document.querySelector(".blazers");
+
+const infoClippers = document.querySelector(".equipos-clippers");
+const logoClippers = document.querySelector(".clippers");
+
+const infoKings = document.querySelector(".equipos-kings");
+const logoKings = document.querySelector(".kings");
+
+const infoGrizzlies = document.querySelector(".equipos-grizzlies");
+const logoGrizzlies = document.querySelector(".grizzlies");
+
+const infoJazz = document.querySelector(".equipos-jazz");
+const logoJazz = document.querySelector(".jazz");
+
+const infoLakers = document.querySelector(".equipos-lakers");
+const logoLakers = document.querySelector(".lakers");
+
+const infoMavs = document.querySelector(".equipos-mavs");
+const logoMavs = document.querySelector(".mavs");
+
+const infoNuggets = document.querySelector(".equipos-nuggets");
+const logoNuggets = document.querySelector(".nuggets");
+
+const infoPelicans = document.querySelector(".equipos-pelicans");
+const logoPelicans = document.querySelector(".pelicans");
+
+const infoRockets = document.querySelector(".equipos-rockets");
+const logoRockets = document.querySelector(".rockets");
+
+const infoSpurs = document.querySelector(".equipos-spurs");
+const logoSpurs = document.querySelector(".spurs");
+
+const infoSuns = document.querySelector(".equipos-suns");
+const logoSuns = document.querySelector(".suns");
+
+const infoThunder = document.querySelector(".equipos-thunder");
+const logoThunder = document.querySelector(".thunder");
+
+const infoWarriors = document.querySelector(".equipos-warriors");
+const logoWarriors = document.querySelector(".warriors");
+
+const infoWolves = document.querySelector(".equipos-wolves");
+const logoWolves = document.querySelector(".wolves");
+
+
+
+logoBlazers.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoBlazersCopy = infoBlazers.cloneNode(true);
+    infoBlazersCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoBlazersCopy);
+    desplegableInner.style.backgroundColor = "#000";
+    desplegableInner.style.backgroundImage = "url('../img/blazers.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "-290px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoClippers.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoClippersCopy = infoClippers.cloneNode(true);
+    infoClippersCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoClippersCopy);
+    desplegableInner.style.backgroundColor = "#fff";
+    desplegableInner.style.backgroundImage = "url('../img/clippers.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "0px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoKings.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoKingsCopy = infoKings.cloneNode(true);
+    infoKingsCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoKingsCopy);
+    desplegableInner.style.backgroundColor = "#fff";
+    desplegableInner.style.backgroundImage = "url('../img/kings.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "-100px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoGrizzlies.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoGrizzliesCopy = infoGrizzlies.cloneNode(true);
+    infoGrizzliesCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoGrizzliesCopy);
+    desplegableInner.style.backgroundColor = "#fff";
+    desplegableInner.style.backgroundImage = "url('../img/grizzlies.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "-100px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoJazz.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoJazzCopy = infoJazz.cloneNode(true);
+    infoJazzCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoJazzCopy);
+    desplegableInner.style.backgroundColor = "#440044";
+    desplegableInner.style.backgroundImage = "url('../img/jazz.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "90px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoLakers.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoLakersCopy = infoLakers.cloneNode(true);
+    infoLakersCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoLakersCopy);
+    desplegableInner.style.backgroundColor = "#fff";
+    desplegableInner.style.backgroundImage = "url('../img/lakers.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "100px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoMavs.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoMavsCopy = infoMavs.cloneNode(true);
+    infoMavsCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoMavsCopy);
+    desplegableInner.style.backgroundColor = "#2222bb";
+    desplegableInner.style.backgroundImage = "url('../img/mavs.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "90px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoNuggets.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoNuggetsCopy = infoNuggets.cloneNode(true);
+    infoNuggetsCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoNuggetsCopy);
+    desplegableInner.style.backgroundColor = "#222288";
+    desplegableInner.style.backgroundImage = "url('../img/nuggets.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "-130px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoPelicans.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoPelicansCopy = infoPelicans.cloneNode(true);
+    infoPelicansCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoPelicansCopy);
+    desplegableInner.style.backgroundColor = "#aa1100";
+    desplegableInner.style.backgroundImage = "url('../img/pelicans.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "90px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoRockets.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoRocketsCopy = infoRockets.cloneNode(true);
+    infoRocketsCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoRocketsCopy);
+    desplegableInner.style.backgroundColor = "#fff";
+    desplegableInner.style.backgroundImage = "url('../img/rockets.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "0px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoSpurs.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoSpursCopy = infoSpurs.cloneNode(true);
+    infoSpursCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoSpursCopy);
+    desplegableInner.style.backgroundColor = "#000";
+    desplegableInner.style.backgroundImage = "url('../img/spurs.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "90px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoSuns.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoSunsCopy = infoSuns.cloneNode(true);
+    infoSunsCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoSunsCopy);
+    desplegableInner.style.backgroundColor = "#560046";
+    desplegableInner.style.backgroundImage = "url('../img/suns.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "90px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoThunder.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoThunderCopy = infoThunder.cloneNode(true);
+    infoThunderCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoThunderCopy);
+    desplegableInner.style.backgroundColor = "#dd7711";
+    desplegableInner.style.backgroundImage = "url('../img/thunder.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "-450px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoWarriors.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoWarriorsCopy = infoWarriors.cloneNode(true);
+    infoWarriorsCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoWarriorsCopy);
+    desplegableInner.style.backgroundColor = "#fff";
+    desplegableInner.style.backgroundImage = "url('../img/warriors.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "-750px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+logoWolves.addEventListener("click", (evt)=>{
+    evt.preventDefault();
+    const infoWolvesCopy = infoWolves.cloneNode(true);
+    infoWolvesCopy.classList.toggle("contenedor-info-estilo") 
+    desplegableInner.appendChild(infoWolvesCopy);
+    desplegableInner.style.backgroundColor = "#112156";
+    desplegableInner.style.backgroundImage = "url('../img/wolves.png')";
+    desplegableInner.style.backgroundSize = "1000px";
+    desplegableInner.style.backgroundRepeat = "no-repeat";
+    desplegableInner.style.backgroundPosition = "center";
+    desplegableInner.style.backgroundPositionY = "90px";
+    desplegable.style.opacity = 100;
+    desplegable.style.zIndex = 20;
+})  
+
+
+
 desplegableCierre.addEventListener("click", ()=>{
     removeAllChildNodes(desplegableInner);
     desplegableInner.style.backgroundImage = "none";
@@ -300,7 +578,6 @@ desplegableCierre.addEventListener("click", ()=>{
     desplegable.style.opacity = 0;
     desplegable.style.zIndex = -5;
 })
-
 
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {

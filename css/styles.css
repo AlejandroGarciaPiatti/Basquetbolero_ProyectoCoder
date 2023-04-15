@@ -78,7 +78,7 @@ a{
     height: 100vh;
     left: 0;
     top: 0;
-    background-color: #8d99ae;
+    background-color: #3f415a;
     z-index: -5;
     border: 2px solid #edf2f4;
     opacity: 0;
@@ -101,6 +101,12 @@ a{
 .mobile-nav-list-item a{
     color: #edf2f4;
     font-weight: 700;
+}
+
+.mobile-nav-list-item a:hover{
+    border-bottom: 1px solid #d90429;
+    color: #fff;
+    background-color: #2b2d42;
 }
 
 .mobile-nav-cierre{
@@ -264,7 +270,7 @@ a{
 
 /* ---------TABLETS-------- */
 
-@media (min-width: 600px) and (max-width: 1200px)  {
+@media (min-width: 600px) and (max-width: 1199px)  {
 
     .nav{
         display: block;
@@ -307,7 +313,7 @@ a{
 
 /* --------DESKTOP-------- */
 
-@media (min-width: 1201px){
+@media (min-width: 1200px){
 
     .nav{
         display: block;
@@ -383,7 +389,7 @@ a{
     font-size: 0.8rem;
 }
 
-@media (min-width: 1201px){
+@media (min-width: 1200px){
    
     .historia-liga figure{
         width: 30%;
@@ -456,7 +462,7 @@ a{
     z-index: -5;
     opacity: 0;
     transition: opacity .4s;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     justify-content: end;
     align-items: start;
@@ -487,26 +493,29 @@ a{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* background-image: url("../img/hawks.png");
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-position: center; */
+
     
 }
 
-.contenedor-info-estilo .info-hawks, .contenedor-info-estilo .info-celtics, .contenedor-info-estilo .info-bulls, .contenedor-info-estilo .info-cavs, .contenedor-info-estilo .info-pistons, .contenedor-info-estilo .info-pacers, .contenedor-info-estilo .info-heat, .contenedor-info-estilo .info-bucks, .contenedor-info-estilo .info-hornets, .contenedor-info-estilo .info-knicks, .contenedor-info-estilo .info-nets, .contenedor-info-estilo .info-raptors, .contenedor-info-estilo .info-sixers, .contenedor-info-estilo .info-wizards, .contenedor-info-estilo .info-magic {
+.contenedor-info-estilo .info-hawks, .contenedor-info-estilo .info-celtics, .contenedor-info-estilo .info-bulls, .contenedor-info-estilo .info-cavs, .contenedor-info-estilo .info-pistons, .contenedor-info-estilo .info-pacers, .contenedor-info-estilo .info-heat, .contenedor-info-estilo .info-bucks, .contenedor-info-estilo .info-hornets, .contenedor-info-estilo .info-knicks, .contenedor-info-estilo .info-nets, .contenedor-info-estilo .info-raptors, .contenedor-info-estilo .info-sixers, .contenedor-info-estilo .info-wizards, .contenedor-info-estilo .info-magic, .contenedor-info-estilo .info-blazers, .contenedor-info-estilo .info-clippers, .contenedor-info-estilo .info-kings, .contenedor-info-estilo .info-grizzlies, .contenedor-info-estilo .info-jazz, .contenedor-info-estilo .info-lakers, .contenedor-info-estilo .info-mavs, .contenedor-info-estilo .info-nuggets, .contenedor-info-estilo .info-pelicans, .contenedor-info-estilo .info-rockets, .contenedor-info-estilo .info-spurs, .contenedor-info-estilo .info-suns, .contenedor-info-estilo .info-thunder, .contenedor-info-estilo .info-warriors, .contenedor-info-estilo .info-wolves {
     width: 100%;
     padding: 20px;
     display: block;
     position: relative;
     top: 0;
     left: 0;
+    background-color: #edf2f4ee;
+    color: #000000;
+    font-weight: 800;
+}
 
+.contenedor-info-estilo .team__info h4{
+    text-align: center;
+    padding: 10px;
 }
 
 
-
-/* INFO EQUIPOS ESTE */
+/* INFO EQUIPOS */
 
 
 .team__info{
@@ -521,7 +530,7 @@ a{
     left: -20px;
     display: none;
 }
-.team h4{
+.team__info h4{
     text-align: center;
 }
 
@@ -540,22 +549,18 @@ a{
     
 }
 
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1199px) {
     .east ul, .west ul{
         grid-template-columns: repeat(3,1fr);
     }
-    .team:hover + div{
-        display: block;
-    }
+    
 }
 
-@media (min-width: 1201px){
+@media (min-width: 1200px){
     .east ul,.west ul{
         grid-template-columns: repeat(4,1fr);
     }
-    .team:hover + div{
-        display: block;
-    }
+    
 }
 
 /* --------PAGINA TOPTEN-------- */
@@ -588,13 +593,13 @@ a{
     padding: 0.5em;
 }
 
-@media (min-width:600px) and (max-width:1200px) {
+@media (min-width:600px) and (max-width:1199px) {
     .estrellas article iframe{
         height: 400px;
     }
 }
 
-@media (min-width: 1201px){
+@media (min-width: 1200px){
     .estrellas{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -652,7 +657,7 @@ a{
 }
 
 
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
 
 
     .tabla-posiciones{
@@ -712,13 +717,13 @@ a{
     text-align: right;
 }
 
-@media (min-width: 600px) and (max-width: 1200px){
+@media (min-width: 600px) and (max-width: 1199px){
     .formulario form fieldset{
         width: 55%;
     }
 }
 
-@media (min-width: 1201px){
+@media (min-width: 1200px){
     .formulario form fieldset{
         width: 30%;
     }
