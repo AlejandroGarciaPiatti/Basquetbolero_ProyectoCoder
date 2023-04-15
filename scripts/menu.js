@@ -88,7 +88,7 @@ logoCeltics.addEventListener("click", (evt)=>{
     const infoCelticsCopy = infoCeltics.cloneNode(true);
     infoCelticsCopy.classList.toggle("contenedor-info-estilo") 
     desplegableInner.appendChild(infoCelticsCopy);
-    desplegableInner.style.backgroundColor = "#11ef20";
+    desplegableInner.style.backgroundColor = "#117720";
     desplegableInner.style.backgroundImage = "url('../img/celtics.png')";
     desplegableInner.style.backgroundSize = "1000px";
     desplegableInner.style.backgroundRepeat = "no-repeat";
