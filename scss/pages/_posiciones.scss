@@ -1,0 +1,55 @@
+.cuadro-titulo h2, .contenedor-playoff{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 1em;
+}
+
+.cuadro{
+    width: 100%;
+}
+
+.tabla-posiciones{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 75px;
+    padding:  1em;
+
+    article{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1em 0;
+    }
+
+    thead{
+        background-color: #8d99ae;
+    }
+
+    th{
+        background-color: #d90429;
+        border: 2px solid #2b2d42;
+        color: #edf2f4;
+    }
+    tr{
+        background-color: #2b2d42;
+        color: #edf2f4;
+
+        &:nth-child(even){
+            background-color: #edf2f4;
+            color: #2b2d42;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+
+    .tabla-posiciones{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em;
+    }
+}

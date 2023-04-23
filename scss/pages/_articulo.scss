@@ -1,0 +1,38 @@
+.main__noticia{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+
+    article{
+        display: flex;
+        flex-direction: column;
+
+        figure{
+            position: relative;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        p:not(.copyright){
+            padding: 1.5em 0;
+        }
+
+        h3{
+            padding: 1em 0;
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px){
+    .main__noticia article figure{
+        width: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main__noticia article figure{
+        width: 600px;
+    }
+}

@@ -1,0 +1,217 @@
+.historia-liga{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+
+    h3{
+        align-self: center;
+    }
+
+    p{
+        padding: 1em 0;
+    }
+
+    figure{
+        position: relative;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    figcaption{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background-color: #000000;
+        color: #edf2f4;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 600px){
+   
+    .historia-liga figure{
+        width: 50%;
+    }    
+    
+}
+
+@media (min-width: 1200px){
+   
+    .historia-liga figure{
+        width: 30%;
+    }    
+    
+}
+
+/* --------CONFERENCIAS-------- */
+
+.equipos-title{
+    text-align: center;
+}
+
+.team-logo{
+    width: 100px;
+    text-align: center;
+}
+
+.east{
+    position: relative;
+
+    h3{
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 2em 0;
+        row-gap: 1em;
+        margin-bottom: 3em;
+
+        li{
+            position: relative;
+        }
+    }
+}
+
+
+.heat{
+    width: 200px;
+}
+
+.west{
+
+    h3{
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 2em 0;
+        row-gap: 1em;
+        margin-bottom: 3em;
+
+        li{
+            position: relative;
+        }
+    }
+}
+
+
+
+
+
+
+
+.contenedor-info{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2b2d42dd;
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -5;
+    opacity: 0;
+    transition: opacity .4s;
+    padding: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+
+    .contenedor-info-inner{
+        position: absolute;
+        height: 60%;
+        width: 60%;
+        background-color: #d90429;
+        left: 20%;
+        top: 20%;
+        border: 2px solid #edf2f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .contenedor-info-cierre{
+        width: 30px;
+    }
+    
+}
+
+.contenedor-info-estilo{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .info-hawks, .info-celtics, .info-bulls, .info-cavs, .info-pistons, .info-pacers, .info-heat, .info-bucks, .info-hornets, .info-knicks, .info-nets, .info-raptors, .info-sixers, .info-wizards, .info-magic, .info-blazers, .info-clippers, .info-kings, .info-grizzlies, .info-jazz, .info-lakers, .info-mavs, .info-nuggets, .info-pelicans, .info-rockets, .info-spurs, .info-suns, .info-thunder, .info-warriors, .info-wolves{
+        width: 100%;
+        padding: 20px;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #edf2f4ee;
+        color: #000000;
+        font-weight: 800;
+    }
+
+    .team__info{
+       
+        h4{
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
+
+.team__info{
+    width: 150px;
+    height: auto;
+    background-color: #3f415a;
+    border: solid 1px #d90429;
+    color: #edf2f4;
+    position: absolute;
+    z-index: 5;
+    top: 130px;
+    left: -20px;
+    display: none;
+}
+
+@media (max-width:599px){
+
+    .east ul li figure, .west ul li figure{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    .east ul, .west ul{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+
+@media (min-width: 1200px){
+    .east ul,.west ul{
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+}

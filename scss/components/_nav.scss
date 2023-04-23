@@ -1,0 +1,52 @@
+.nav{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 15;
+    display: none;
+
+    &-list{
+        display: flex;
+        gap: 0;
+
+        &-item{
+            border: 1px solid black;
+            width: 20%;
+            text-align: center;
+            background-color: #2b2d42;
+
+            &:hover{
+                background-color: #8d99ae;
+                border-color: #edf2f4;
+                color: #2b2d42;
+            }
+            
+
+            a{
+                text-decoration: none;
+                color: #edf2f4;
+                font-size: 0.8rem;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px)  {
+
+    .nav{
+        display: block;
+    }
+
+}
+
+/* --------DESKTOP-------- */
+
+@media (min-width: 1200px){
+
+    .nav{
+        display: block;
+    }
+   
+}
+

@@ -1,0 +1,105 @@
+.footer{
+    background-color: #2b2d42;
+    border-top: 2px solid #ef233c;
+    min-height: 100px;
+    width: 100%;
+
+    &-section-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .footer-content{
+            padding: 0.8em;
+
+            .logo-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            
+                .logo-ball{
+                    width: 50px;
+                    text-align: center;
+                  
+                }
+            
+                .logo-name{
+                    color: #edf2f4;
+                    font-family: 'Climate Crisis', cursive;
+                }
+            }
+
+            .social-list{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .social-icon{
+                    width: 36px;
+                }
+            }
+
+            .newsletter{
+                display: flex;
+                flex-direction: column;
+                padding: 0 10%;
+                justify-content: center;
+                align-items: center;
+
+                & input{
+                    width: 50%;
+                }
+
+                .email-label{
+                    color: #edf2f4;
+                    text-align: center;
+                }
+            }
+
+        }
+        
+    
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px)  {
+
+
+.footer-section-list{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-list li{
+    padding: 0.8em;
+} 
+
+.newsletter input{
+    width: 100%;
+}
+}
+
+/* --------DESKTOP-------- */
+
+@media (min-width: 1200px){
+
+    .footer-section-list{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footer-section-list li{
+        width: 1fr;
+    } 
+    .social-list li{
+        padding: 0.8em;
+    }
+    .newsletter input{
+        width: 100%;
+    } 
+   
+}

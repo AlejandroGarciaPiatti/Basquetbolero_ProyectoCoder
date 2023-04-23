@@ -1,0 +1,68 @@
+.header{
+    background-color: #d90429;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    min-height: 80px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    color: #edf2f4;
+    border-bottom: 10px solid #2b2d42;
+
+    &-title{
+        text-align: center;
+        font-family: 'Climate Crisis', cursive;
+        font-size: 1.6rem;
+        }
+
+    &-burger{
+            width: 30px;
+            cursor: pointer;
+        }
+    
+}
+
+@media (min-width: 600px) and (max-width: 1199px)  {
+
+    .header{
+        border-bottom: none;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .header-burger{
+        display: none;
+    }
+
+    .header-title{
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+        
+}
+
+/* --------DESKTOP-------- */
+
+@media (min-width: 1200px){
+
+    .header{
+        border-bottom: none;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .header-burger{
+        display: none;
+    }
+
+    .header-title{
+        font-size: 2.5rem;
+        padding-bottom: 20px;
+    }
+   
+}
+
+

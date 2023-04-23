@@ -1,0 +1,65 @@
+.about-form{
+    margin-bottom: 8em;
+
+    p{
+        padding: 0.5em 1em;
+    }
+}
+
+.formulario{
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    
+        fieldset{
+            width: 100%;
+            display: flex;
+            border: none;
+            justify-content: space-between;
+            padding: 1em;
+        }
+    }
+
+    input{
+        width: 200px;
+        text-align: right;
+        
+    }
+}
+
+.submit input{
+    width: 100%;
+    text-align: center;
+    background-color: #2b2d42;
+    color: #edf2f4;
+    border: 1px solid #d90429;
+    
+    &:hover{
+        background-color: #3f415a;
+    }
+}
+
+.text-area textarea{
+    width: 100%;
+    resize: none;
+}
+.asunto select{
+    width: 200px;
+    text-align: right;
+}
+
+@media (min-width: 600px) and (max-width: 1199px){
+    .formulario form fieldset{
+        width: 55%;
+    }
+}
+
+@media (min-width: 1200px){
+    .formulario form fieldset{
+        width: 30%;
+    }
+}
