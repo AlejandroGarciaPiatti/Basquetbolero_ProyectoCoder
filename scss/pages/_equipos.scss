@@ -19,28 +19,53 @@
         width: 100%;
     }
 
-    figcaption{
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        background-color: #000000;
-        color: #edf2f4;
-        font-size: 0.8rem;
-    }
+    // figcaption{
+    //     position: absolute;
+    //     width: 100%;
+    //     bottom: 0;
+    //     background-color: #000000;
+    //     color: #edf2f4;
+    //     font-size: 0.8rem;
+    // }
 }
 
 @media (min-width: 600px){
+
+    .historia-liga{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        row-gap: 10px;
+    
+        h3{
+            grid-column: 1/3;
+            text-align: center;
+        }
+       
+    }
+
    
     .historia-liga figure{
-        width: 50%;
-    }    
+        width: 100%;
+        height: 350px;
+        .cropped{
+            height: 100%;
+            object-fit: cover;
+            object-position: 0 0px;
+        }
+        
+    } 
+    
+    .historia-liga .bird{
+        height: 450px;
+    }
     
 }
 
 @media (min-width: 1200px){
    
-    .historia-liga figure{
-        width: 30%;
+    .historia-liga p:not(.copyright){
+        padding: 0 2em;
     }    
     
 }
@@ -64,7 +89,7 @@
         padding: 1em 0;
     }
 
-    ul{
+    section{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
@@ -73,7 +98,7 @@
         row-gap: 1em;
         margin-bottom: 3em;
 
-        li{
+        article{
             position: relative;
         }
     }
@@ -91,7 +116,7 @@
         padding: 1em 0;
     }
 
-    ul{
+    section{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
@@ -100,7 +125,7 @@
         row-gap: 1em;
         margin-bottom: 3em;
 
-        li{
+        article{
             position: relative;
         }
     }
@@ -192,7 +217,7 @@
 
 @media (max-width:599px){
 
-    .east ul li figure, .west ul li figure{
+    .east section article figure, .west section article figure{
         display: grid;
         grid-template-rows: repeat(2,1fr);
         justify-items: center;
@@ -203,14 +228,14 @@
 }
 
 @media (min-width: 600px) and (max-width: 1199px) {
-    .east ul, .west ul{
+    .east section, .west section{
         grid-template-columns: repeat(3,1fr);
     }
     
 }
 
 @media (min-width: 1200px){
-    .east ul,.west ul{
+    .east section,.west section{
         grid-template-columns: repeat(4,1fr);
     }
     
