@@ -23,6 +23,10 @@
                 .logo-ball{
                     width: 50px;
                     text-align: center;
+                    animation-name: pelota-logo;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
                   
                 }
             
@@ -45,7 +49,7 @@
             .newsletter{
                 display: flex;
                 flex-direction: column;
-                padding: 0 10%;
+                padding: 0 20px;
                 justify-content: center;
                 align-items: center;
 
@@ -72,15 +76,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    .footer-content{
+        .newsletter{
+            padding: 0;
+            input{
+                width: 100%;
+                }
+        }
+    }
 }
 
 .social-list li{
     padding: 0.8em;
 } 
 
-.newsletter input{
-    width: 100%;
-}
 }
 
 /* --------DESKTOP-------- */
@@ -91,15 +100,17 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        .footer-content{
+            .newsletter{
+                input{
+                    width: 100%;
+                }
+            }
+        }
     }
-    .footer-section-list li{
-        width: 1fr;
-    } 
+   
     .social-list li{
         padding: 0.8em;
     }
-    .newsletter input{
-        width: 100%;
-    } 
    
 }

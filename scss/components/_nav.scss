@@ -5,6 +5,10 @@
     z-index: 15;
     display: none;
 
+    .logo-ball{
+        width: 50%;
+    }
+
     &-list{
         display: flex;
         gap: 0;

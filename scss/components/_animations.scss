@@ -1,0 +1,28 @@
+@keyframes pelota-logo{
+    from{
+        // transform: rotate(0deg);
+        rotate: 0deg;
+    }
+    to{
+        // transform: rotate(360deg);
+        rotate: 360deg;
+    }
+}
+
+@keyframes pelota-menu{
+    0%{
+        transform: translateY(0px);
+        
+    }
+
+    25%{
+        transform: translateY(5px);
+    }
+
+   
+
+    100%{
+        transform: translateY(450px);
+        
+    }
+}

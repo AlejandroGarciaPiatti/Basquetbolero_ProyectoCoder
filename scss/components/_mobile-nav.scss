@@ -10,6 +10,18 @@
     opacity: 0;
     transition: opacity 1s;
 
+    .logo-ball{
+        width: 40px;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        animation-name: pelota-menu;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in;
+    }
+
     &-list{
         height: 100%;
         display: flex;
@@ -24,11 +36,13 @@
             a{
                 color: #edf2f4;
                 font-weight: 700;
+                
 
                 &:hover{
                     border-bottom: 1px solid #d90429;
                     color: #fff;
                     background-color: #2b2d42;
+                    transition:  1s;
                 }
             }
         }       
