@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
 p:not(.copyright) {
   font-size: 1.3rem;
   line-height: 2rem;
@@ -303,30 +307,27 @@ p:not(.copyright) {
   display: flex;
   flex-direction: column;
 }
-
-.article-box-outer {
+.noticias .article-box-outer {
   display: inline-block;
   margin: 20px;
   border: 1px solid #d90429;
   border-top: 2px solid #ef233c;
 }
-.article-box-outer a {
+.noticias .article-box-outer a {
   text-decoration: none;
   color: #2b2d42;
 }
-.article-box-outer a h3 {
+.noticias .article-box-outer a h3 {
   padding: 0.8em 0;
 }
-
-.article-image {
+.noticias .article-box-outer .article-box-inner {
+  position: relative;
+}
+.noticias .article-box-outer .article-box-inner .article-image {
   width: 100%;
   height: 300px;
   object-fit: cover;
   object-position: 80% 10%;
-}
-
-.article-box-inner {
-  position: relative;
 }
 
 /* --------TABLETS-------- */
@@ -734,6 +735,58 @@ p:not(.copyright) {
     width: 600px;
   }
 }
+.seccion-ultimas-noticias h2 {
+  text-align: center;
+  border-bottom: 2px solid #d90429;
+  margin-bottom: 10px;
+}
+.seccion-ultimas-noticias .ultimas-noticias {
+  display: flex;
+  width: 100%;
+  padding: 0 10px;
+  justify-content: start;
+  align-items: start;
+  overflow-x: scroll;
+  white-space: nowrap;
+  gap: 5px;
+}
+.seccion-ultimas-noticias .ultimas-noticias .article-box-outer {
+  width: 370px;
+  display: inline-block;
+}
+.seccion-ultimas-noticias .ultimas-noticias .article-box-outer a {
+  position: relative;
+  color: #edf2f4;
+}
+.seccion-ultimas-noticias .ultimas-noticias .article-box-outer a h3 {
+  position: relative;
+  display: inline;
+  background-color: #2b2d42;
+  width: 100%;
+  padding: 0 10px;
+  top: -50px;
+}
+.seccion-ultimas-noticias .ultimas-noticias .article-box-outer .article-box-inner {
+  width: 100%;
+  height: 250px;
+}
+.seccion-ultimas-noticias .ultimas-noticias .article-box-outer .article-box-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.seccion-ultimas-noticias .ultimas-noticias .article-box-outer .article-box-inner img.simmons {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0px 0px;
+}
+.seccion-ultimas-noticias .ultimas-noticias .article-box-outer .article-box-inner .copyright {
+  position: relative;
+  font-size: 0.6rem;
+  bottom: 10px;
+}
+
 /* --------ANIMACION PELOTA GIRATORIA FOOTER-------- */
 @keyframes pelota-logo {
   from {
