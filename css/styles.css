@@ -727,12 +727,14 @@ p:not(.copyright) {
 
 @media (min-width: 600px) and (max-width: 1199px) {
   .main__noticia article figure {
-    width: 300px;
+    width: 75%;
+    height: 450px;
+    margin-left: 12.5%;
   }
-}
-@media (min-width: 1200px) {
-  .main__noticia article figure {
-    width: 600px;
+  .main__noticia article figure img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
   }
 }
 .seccion-ultimas-noticias h2 {
@@ -787,6 +789,40 @@ p:not(.copyright) {
   bottom: 10px;
 }
 
+@media (min-width: 1200px) {
+  .contenedor-seccion-noticias {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-bottom: 20px;
+  }
+  .contenedor-seccion-noticias .main__noticia {
+    padding-top: 0;
+    grid-column: 1/2;
+  }
+  .contenedor-seccion-noticias .main__noticia article figure {
+    height: 400px;
+  }
+  .contenedor-seccion-noticias .main__noticia article figure img {
+    object-fit: cover;
+    height: 100%;
+    object-position: 0 0;
+  }
+  .contenedor-seccion-noticias .seccion-ultimas-noticias {
+    grid-column: 2/3;
+  }
+  .contenedor-seccion-noticias .seccion-ultimas-noticias h2 {
+    border-bottom: none;
+  }
+  .contenedor-seccion-noticias .seccion-ultimas-noticias .ultimas-noticias {
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .contenedor-seccion-noticias .seccion-ultimas-noticias .ultimas-noticias .article-box-outer {
+    width: 100%;
+  }
+}
 /* --------ANIMACION PELOTA GIRATORIA FOOTER-------- */
 @keyframes pelota-logo {
   from {
