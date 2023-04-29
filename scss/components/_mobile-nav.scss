@@ -4,9 +4,9 @@
     height: 100vh;
     left: 0;
     top: 0;
-    background-color: #3f415a;
+    background-color: $secondary-color;
     z-index: -5;
-    border: 2px solid #edf2f4;
+    border: 2px solid $accent-color;
     opacity: 0;
     transition: opacity 1s;
 
@@ -31,17 +31,17 @@
 
         &-item{
             padding: 1.5em;
-            color: #edf2f4;
+            color: $accent-color;
 
             a{
-                color: #edf2f4;
+                color: $accent-color;
                 font-weight: 700;
                 
 
                 &:hover{
-                    border-bottom: 1px solid #d90429;
+                    border-bottom: 1px solid $primary-color;
                     color: #fff;
-                    background-color: #2b2d42;
+                    background-color: $secondary-color-variant;
                     transition:  1s;
                 }
             }

@@ -19,6 +19,7 @@ p:not(.copyright) {
   line-height: 2rem;
 }
 
+/*Paleta de colores*/
 .header {
   background-color: #d90429;
   position: fixed;
@@ -43,6 +44,7 @@ p:not(.copyright) {
   cursor: pointer;
 }
 
+/* --------TABLETS-------- */
 @media (min-width: 600px) and (max-width: 1199px) {
   .header {
     border-bottom: none;
@@ -78,9 +80,6 @@ p:not(.copyright) {
   width: 100%;
   z-index: 15;
   display: none;
-}
-.nav .logo-ball {
-  width: 50%;
 }
 .nav-list {
   display: flex;
@@ -121,7 +120,7 @@ p:not(.copyright) {
   height: 100vh;
   left: 0;
   top: 0;
-  background-color: #3f415a;
+  background-color: #2b2d42;
   z-index: -5;
   border: 2px solid #edf2f4;
   opacity: 0;
@@ -156,7 +155,7 @@ p:not(.copyright) {
 .mobile-nav-list-item a:hover {
   border-bottom: 1px solid #d90429;
   color: #fff;
-  background-color: #2b2d42;
+  background-color: #14151e;
   transition: 1s;
 }
 .mobile-nav-cierre {
@@ -172,6 +171,7 @@ p:not(.copyright) {
   margin: 20px;
 }
 
+/* --------INFO SECCION-------- */
 .about {
   height: 80px;
   margin-top: 150px;
@@ -188,6 +188,7 @@ p:not(.copyright) {
   text-align: center;
 }
 
+/* --------DIVISOR-------- */
 .separador {
   position: relative;
   width: 50%;
@@ -263,6 +264,7 @@ p:not(.copyright) {
   text-align: center;
 }
 
+/* --------TABLETS-------- */
 @media (min-width: 600px) and (max-width: 1199px) {
   .footer-section-list {
     flex-direction: row;
@@ -327,6 +329,7 @@ p:not(.copyright) {
   position: relative;
 }
 
+/* --------TABLETS-------- */
 @media (min-width: 600px) and (max-width: 1199px) {
   .noticias {
     display: grid;
@@ -340,6 +343,7 @@ p:not(.copyright) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/* --------HISTORIA DE LA LIGA-------- */
 .historia-liga {
   display: flex;
   flex-direction: column;
@@ -361,6 +365,7 @@ p:not(.copyright) {
   width: 100%;
 }
 
+/* --------TABLETS-------- */
 @media (min-width: 600px) {
   .historia-liga figure {
     width: 80%;
@@ -372,6 +377,7 @@ p:not(.copyright) {
     object-position: 0 0px;
   }
 }
+/* --------DESKTOP-------- */
 @media (min-width: 1200px) {
   .historia-liga {
     display: grid;
@@ -513,7 +519,7 @@ p:not(.copyright) {
 .team__info {
   width: 150px;
   height: auto;
-  background-color: #3f415a;
+  background-color: #2b2d42;
   border: solid 1px #d90429;
   color: #edf2f4;
   position: absolute;
@@ -523,6 +529,7 @@ p:not(.copyright) {
   display: none;
 }
 
+/* --------MOBILE-------- */
 @media (max-width: 599px) {
   .east section article figure, .west section article figure {
     display: grid;
@@ -532,11 +539,13 @@ p:not(.copyright) {
     align-items: center;
   }
 }
+/* --------TABLETS-------- */
 @media (min-width: 600px) and (max-width: 1199px) {
   .east section, .west section {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/* --------DESKTOP-------- */
 @media (min-width: 1200px) {
   .east section, .west section {
     grid-template-columns: repeat(4, 1fr);
@@ -567,11 +576,13 @@ p:not(.copyright) {
   padding: 0.5em;
 }
 
+/* --------TABLETS-------- */
 @media (min-width: 600px) and (max-width: 1199px) {
   .estrellas article iframe {
     height: 400px;
   }
 }
+/* --------DESKTOP-------- */
 @media (min-width: 1200px) {
   .estrellas {
     display: grid;
@@ -624,6 +635,7 @@ p:not(.copyright) {
   color: #2b2d42;
 }
 
+/* --------DESKTOP-------- */
 @media (min-width: 1200px) {
   .tabla-posiciones {
     display: grid;
@@ -665,7 +677,7 @@ p:not(.copyright) {
   border: 1px solid #d90429;
 }
 .submit input:hover {
-  background-color: #3f415a;
+  background-color: #14151e;
 }
 
 .text-area textarea {
@@ -678,11 +690,13 @@ p:not(.copyright) {
   text-align: right;
 }
 
+/* --------TABLETS-------- */
 @media (min-width: 600px) and (max-width: 1199px) {
   .formulario form fieldset {
     width: 55%;
   }
 }
+/* --------DESKTOP-------- */
 @media (min-width: 1200px) {
   .formulario form fieldset {
     width: 30%;
@@ -720,6 +734,7 @@ p:not(.copyright) {
     width: 600px;
   }
 }
+/* --------ANIMACION PELOTA GIRATORIA FOOTER-------- */
 @keyframes pelota-logo {
   from {
     rotate: 0deg;
@@ -728,6 +743,7 @@ p:not(.copyright) {
     rotate: 360deg;
   }
 }
+/* --------ANIMACION PELOTA MENU MOBILE-------- */
 @keyframes pelota-menu {
   0% {
     transform: translateY(0px);

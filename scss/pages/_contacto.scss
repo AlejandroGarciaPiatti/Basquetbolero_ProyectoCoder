@@ -34,12 +34,12 @@
 .submit input{
     width: 100%;
     text-align: center;
-    background-color: #2b2d42;
-    color: #edf2f4;
-    border: 1px solid #d90429;
+    background-color: $secondary-color;
+    color: $accent-color;
+    border: 1px solid $primary-color;
     
     &:hover{
-        background-color: #3f415a;
+        background-color: $secondary-color-variant;
     }
 }
 
@@ -52,11 +52,15 @@
     text-align: right;
 }
 
+/* --------TABLETS-------- */
+
 @media (min-width: 600px) and (max-width: 1199px){
     .formulario form fieldset{
         width: 55%;
     }
 }
+
+/* --------DESKTOP-------- */
 
 @media (min-width: 1200px){
     .formulario form fieldset{

@@ -1,6 +1,6 @@
 .footer{
-    background-color: #2b2d42;
-    border-top: 2px solid #ef233c;
+    background-color: $secondary-color;
+    border-top: 2px solid $primary-color-variant;
     min-height: 100px;
     width: 100%;
 
@@ -31,7 +31,7 @@
                 }
             
                 .logo-name{
-                    color: #edf2f4;
+                    color: $accent-color;
                     font-family: 'Climate Crisis', cursive;
                 }
             }
@@ -58,7 +58,7 @@
                 }
 
                 .email-label{
-                    color: #edf2f4;
+                    color: $accent-color;
                     text-align: center;
                 }
             }
@@ -68,6 +68,8 @@
     
     }
 }
+
+/* --------TABLETS-------- */
 
 @media (min-width: 600px) and (max-width: 1199px)  {
 

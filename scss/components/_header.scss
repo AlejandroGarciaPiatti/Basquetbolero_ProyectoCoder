@@ -1,5 +1,5 @@
 .header{
-    background-color: #d90429;
+    background-color: $primary-color;
     position: fixed;
     width: 100%;
     top: 0px;
@@ -9,8 +9,8 @@
     justify-content: space-between;
     padding: 0 20px;
     align-items: center;
-    color: #edf2f4;
-    border-bottom: 10px solid #2b2d42;
+    color: $accent-color;
+    border-bottom: 10px solid $secondary-color;
 
     &-title{
         text-align: center;
@@ -24,6 +24,8 @@
         }
     
 }
+
+/* --------TABLETS-------- */
 
 @media (min-width: 600px) and (max-width: 1199px)  {
 

@@ -5,9 +5,7 @@
     z-index: 15;
     display: none;
 
-    .logo-ball{
-        width: 50%;
-    }
+  
 
     &-list{
         display: flex;
@@ -17,18 +15,18 @@
             border: 1px solid black;
             width: 20%;
             text-align: center;
-            background-color: #2b2d42;
+            background-color: $secondary-color;
 
             &:hover{
                 background-color: #8d99ae;
-                border-color: #edf2f4;
-                color: #2b2d42;
+                border-color: $accent-color;
+                color: $secondary-color;
             }
             
 
             a{
                 text-decoration: none;
-                color: #edf2f4;
+                color: $accent-color;
                 font-size: 0.8rem;
                 display: block;
             }

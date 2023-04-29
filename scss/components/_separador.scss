@@ -1,3 +1,4 @@
+/* --------INFO SECCION-------- */
 .about{
     height: 80px;
     margin-top: 150px;
@@ -18,11 +19,12 @@
     
 }
 
+/* --------DIVISOR-------- */
 .separador{
     position: relative;
     width: 50%;
     left: 25%;
-    border-bottom: 2px solid #d90429;
+    border-bottom: 2px solid $primary-color;
     margin-bottom: 50px;
     margin-top: 50px;
 }

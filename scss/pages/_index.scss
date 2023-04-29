@@ -10,12 +10,12 @@
 .article-box-outer{
     display: inline-block;
     margin: 20px;
-    border: 1px solid #d90429;
-    border-top: 2px solid #ef233c;
+    border: 1px solid $primary-color;
+    border-top: 2px solid $primary-color-variant;
 
     a{
         text-decoration: none;
-        color: #2b2d42;
+        color: $secondary-color;
 
         h3{
             padding: 0.8em 0;
@@ -36,6 +36,8 @@
 .article-box-inner{
     position: relative;
 }
+
+/* --------TABLETS-------- */
 
 @media (min-width: 600px) and (max-width: 1199px)  {
 
