@@ -800,7 +800,7 @@ p:not(.copyright) {
     grid-column: 1/2;
   }
   .contenedor-seccion-noticias .main__noticia article figure {
-    height: 400px;
+    height: 550px;
   }
   .contenedor-seccion-noticias .main__noticia article figure img {
     object-fit: cover;
